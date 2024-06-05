@@ -1,5 +1,7 @@
 ## Welcome to CyberPolicy Pro
 
+<img src = "./src/images/CyberPolicy-Pro.JPG">
+
 At CyberPolicy Pro, we specialize in simplifying existing privacy policies, ensuring compliance with legal frameworks, and drafting tailored privacy policies for businesses and enterprises. Our comprehensive services also include expert guidance and continuous updates to help you stay compliant and manage data privacy risks effectively.
 
 ## OUR SERVICES
