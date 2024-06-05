@@ -1,12 +1,12 @@
-## Welcome to CyberPolicy Pro
+## Welcome to CyberPolicy Pro.
 
 <img src = "./src/images/CyberPolicy-Pro.JPG">
 
 At CyberPolicy Pro, we specialize in simplifying existing privacy policies, ensuring compliance with legal frameworks, and drafting tailored privacy policies for businesses and enterprises. Our comprehensive services also include expert guidance and continuous updates to help you stay compliant and manage data privacy risks effectively.
 
-## OUR SERVICES
+## OUR SERVICES.
 
-## Privacy Policy Simplification
+## Privacy Policy Simplification.
 
 Privacy policies can be complex and difficult to understand. Our experts simplify these documents into clear, easy-to-understand summaries, highlighting the most critical points for users.
 
@@ -16,7 +16,7 @@ Jargon Explanation: Technical and legal terms are defined in simple terms.
 
 Red Flag Identification: We highlight potentially concerning clauses that might impact your privacy and explain them clearly.
 
-## Compliance Analysis
+## Compliance Analysis.
 
 Stay compliant with the latest legal frameworks and regulations. We offer thorough compliance checks to ensure your privacy policies meet industry standards and legal requirements.
 
@@ -26,7 +26,7 @@ Regular Updates: Stay up-to-date with the latest legal requirements and adjustme
 
 Risk Assessment: Identify and mitigate potential compliance risks based on established frameworks like NIST SP 800-30.
 
-## Tailored Privacy Policy Creation
+## Tailored Privacy Policy Creation.
 
 Every business has unique privacy needs. We draft customized privacy policies tailored to your specific business requirements, ensuring comprehensive coverage and legal compliance.
 
@@ -36,7 +36,7 @@ Ensure Legal Compliance: We integrate necessary clauses and provisions to ensure
 
 Incorporate Best Practices: We recommend industry best practices for data security, transparency, and user control, ensuring your policy reflects current standards.
 
-## Expert Guidance and Continuous Learning
+## Expert Guidance and Continuous Learning.
 
 We provide ongoing support and expert advice to help you navigate complex privacy concepts and stay informed about emerging privacy laws and regulations.
 
@@ -55,43 +55,45 @@ Simplicity: We believe in making complex information simple and accessible, ensu
 Customer Focus: Your privacy and compliance needs are our top priority. We work closely with you to provide personalized, effective solutions.
 
 
-## Usage
+## Usage.
 
 This project requires ``` node.js ``` and ``` npm ``` to run.
 
-### Clone this Rpository
+### Clone this Rpository.
 ```
 git clone https://github.com/MrHackeric/CyberPolicy-Pro.git
 ```
 
-### Go to project directory
+### Go to project directory.
 ```
-cd CyberPolicy-Pro
-```
-
-### Project setup
-```
-npm install
+cd CyberPolicy-Pro.
 ```
 
-#### Compiles and hot-reloads for development server
+### Project setup.
 ```
-npm run dev
-```
-
-### Go to API server directory and run the backend server
-```
-cd src
-```
-For server to run, create a ```.env``` file with Google's Gemini API Key and store it in the ```.env``` file under the variable name API_KEY. Get API Key here https://aistudio.google.com/app/apikey
-```
-node server.js
+npm install.
 ```
 
-#### Compiles and minifies for production
+#### Compiles and hot-reloads for development server.
+The server runs on ``` localhost:5173 ```.
 ```
-npm run build
+npm run dev.
 ```
 
-#### Customize configuration
+### Go to API server directory and run the backend server.
+```
+cd src.
+```
+For server to run, create a ```.env``` file with Google's Gemini API Key and store it in the ```.env``` file under the variable name API_KEY. Get API Key here https://aistudio.google.com/app/apikey.
+
+The server listens on ```localhost:3000```.
+
+Run ```node server.js``` to deploy server.
+
+#### Compiles and minifies for production.
+```
+npm run build.
+```
+
+#### Customize configuration.
 See [Configuration Reference](https://vitejs.dev/guide/).
