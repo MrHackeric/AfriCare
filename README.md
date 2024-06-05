@@ -81,6 +81,7 @@ npm run dev
 ```
 cd src
 ```
+For server to run, create a ```.env``` file with Google's Gemini API Key and store it in the ```.env``` file under the variable name API_KEY. Get API Key here https://aistudio.google.com/app/apikey
 ```
 node server.js
 ```
