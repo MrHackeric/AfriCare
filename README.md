@@ -64,7 +64,7 @@ git clone https://github.com/MrHackeric/CyberPolicy-Pro.git
 
 ### Go to project directory
 ```
-cd CyberPolicy-Pro.git
+cd CyberPolicy-Pro
 ```
 
 ### Project setup
