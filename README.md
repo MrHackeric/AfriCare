@@ -54,6 +54,12 @@ Simplicity: We believe in making complex information simple and accessible, ensu
 
 Customer Focus: Your privacy and compliance needs are our top priority. We work closely with you to provide personalized, effective solutions.
 
+### Problem Statement:
+Many people specifically consumers/users do not pay keen attention to detail especially with privacy policies-mostof whom end up regretting on the decisions they made while signing up to company websites: Read this story from Quora https://www.quora.com/Is-there-a-website-or-resource-out-there-that-summarizes-and-makes-Terms-of-Service-and-Privacy-Policies-human-readable-accessible-and-useful
+
+<img src = "./src/images/CyberPolicy-Pro-Research.JPG">
+
+We could avoid such by providing consumers and businesses with a product that effectively delivers easily consumable information that is time-consuming anduser-friendly.
 
 ## Usage.
 
