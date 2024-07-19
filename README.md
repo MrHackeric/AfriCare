@@ -65,7 +65,7 @@ We could avoid such by providing consumers and businesses with a product that ef
 
 This project requires ``` node.js ``` and ``` npm ``` to run.
 
-### Clone this Rpository.
+### Clone this Repository.
 ```
 git clone https://github.com/MrHackeric/CyberPolicy-Pro.git
 ```
