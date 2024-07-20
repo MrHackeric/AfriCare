@@ -150,6 +150,7 @@ app.post("/chat", upload.single("file"), async (req, res) => {
   }
 });
 
+<<<<<<< HEAD
 // DRAFT
 app.post("/drafts", async (req, res) => {
   const policyDetails = req.body;
@@ -198,4 +199,8 @@ app.listen(port, () => {
   console.log(
     `CyberPolicy Pro Server running at http://localhost:${port}. See Logs below`
   );
+=======
+app.listen(port, () => {
+  console.log(`AfriCare Server running at http://localhost:${port}. See Logs below`);
+>>>>>>> e2eb68fab37187c77b9d47432ef60062633ed649
 });
