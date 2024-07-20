@@ -1,7 +1,7 @@
 import React, {useState} from "react";
 import Sidebar from '../partials/Sidebar';
 import Header from '../partials/Header';
-import SimplifyPolicies from "../partials/dashboard/SimplifyPolicies";
+import ChartArea from "../partials/dashboard/ChartArea";
 import Chatbot from "../partials/dashboard/Chatbot";
 
 function SimplifiedPolicies () {
@@ -28,7 +28,7 @@ function SimplifiedPolicies () {
                         
                         {/* Cards */}
                         <div className="grid grid-cols-12 gap-6">
-                            <SimplifyPolicies />
+                            <ChartArea />
                             <Chatbot />
                         </div>
                     </div>
