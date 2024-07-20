@@ -150,57 +150,7 @@ app.post("/chat", upload.single("file"), async (req, res) => {
   }
 });
 
-<<<<<<< HEAD
-// DRAFT
-app.post("/drafts", async (req, res) => {
-  const policyDetails = req.body;
-
-  console.log("Incoming Privacy Policy Draft Request");
-
-  if (!policyDetails || Object.keys(policyDetails).length === 0) {
-    return res.status(400).json({ error: "Invalid request body" });
-  }
-
-  try {
-    const response = await runChat(
-      `Draft a full and detailed privacy policy with the following details: ${JSON.stringify(
-        policyDetails
-      )}`
-    );
-    res.json({ response });
-  } catch (error) {
-    console.error("Error processing request:", error);
-    res.status(500).json({ error: "Failed to process the request." });
-  }
-});
-
-// Simplify
-app.post("/simplify", async (req, res) => {
-  const { text } = req.body;
-
-  console.log("Incoming Simplify Privacy Policy Request");
-
-  if (!text) {
-    return res.status(400).json({ error: "Invalid request body" });
-  }
-
-  try {
-    const simplifiedText = await runChat(
-      `simplify this privacy policy: ${text}`
-    );
-    res.json({ response: simplifiedText });
-  } catch (error) {
-    console.error("Error processing request:", error);
-    res.status(500).json({ error: "Failed to process the request." });
-  }
-});
-
-app.listen(port, () => {
-  console.log(
-    `CyberPolicy Pro Server running at http://localhost:${port}. See Logs below`
-  );
-=======
 app.listen(port, () => {
   console.log(`AfriCare Server running at http://localhost:${port}. See Logs below`);
->>>>>>> e2eb68fab37187c77b9d47432ef60062633ed649
+
 });
