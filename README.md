@@ -1,105 +1,38 @@
-## Welcome to CyberPolicy Pro.
+# Africare - Enhancing Maternal Healthcare in Africa
 
-<img src = "./src/images/CyberPolicy-Pro.JPG">
+## Introduction
 
-At CyberPolicy Pro, we specialize in simplifying existing privacy policies, ensuring compliance with legal frameworks, and drafting tailored privacy policies for businesses and enterprises. Our comprehensive services also include expert guidance and continuous updates to help you stay compliant and manage data privacy risks effectively.
+Africare is a comprehensive platform designed to address the critical challenges faced in maternal healthcare across Africa. By leveraging AI-driven guidance, community support networks, and accessible resources, Africare aims to improve the quality of care for expectant mothers, midwives, and healthcare providers.
 
-## OUR SERVICES.
+## Problem Statement
 
-## Privacy Policy Simplification.
+Maternal healthcare in Africa faces significant challenges:
 
-Privacy policies can be complex and difficult to understand. Our experts simplify these documents into clear, easy-to-understand summaries, highlighting the most critical points for users.
+1. **Inadequate Healthcare Infrastructure**: Many regions lack adequate healthcare facilities and trained professionals, leading to high maternal and neonatal mortality rates.
+2. **Limited Continuous Education for Midwives**: Midwives often lack access to ongoing training or professional development.
+3. **Mental Health Issues**: Prenatal and postnatal depression are prevalent among women, with insufficient mental health support.
+4. **Fragmented Healthcare Services**: Difficulty in accessing comprehensive and coordinated healthcare services.
 
-Simplify and Summarize: We translate complex legal jargon into plain language, providing concise summaries of privacy policies to help you grasp the essentials.
+## Proposed Solution
 
-Jargon Explanation: Technical and legal terms are defined in simple terms.
+Africare aims to provide a holistic solution to these challenges by:
 
-Red Flag Identification: We highlight potentially concerning clauses that might impact your privacy and explain them clearly.
+1. **AI Driven Guidance for Midwives**: Utilizing AI to offer real-time assistance and training for midwives, enhancing their ability to manage complications and deliver quality care.
+2. **Community Support Network**: Creating forums and discussion groups for midwives to share experiences and seek advice.
+3. **Prenatal and Postnatal Support**: Offering resources and support for women dealing with prenatal and postnatal depression, including access to mental health professionals.
+4. **Emergency Assistance Integration**: Using geolocation services to direct users to nearby medical facilities and pharmacies.
+5. **Resource Sharing Platform**: Enabling users to share personal experiences and foster a supportive community.
 
-## Compliance Analysis.
+## Project Structure
 
-Stay compliant with the latest legal frameworks and regulations. We offer thorough compliance checks to ensure your privacy policies meet industry standards and legal requirements.
+The Africare project is structured as follows:
+```src/```Contains the backend and frontend source code for the application. Here our Gemini AI's ```server.js``` and ```App.jsx``` is located.
+```src/pages``` Contains the main dashboard page of the application.
+```src/partials``` Contains the dashboard components such as Header and Sidebar.
 
-Analyze for Compliance: We examine existing privacy policies against relevant legal frameworks (like GDPR, CCPA, etc.) to identify any potential compliance gaps.
+## How Africare Solves the Problem
 
-Regular Updates: Stay up-to-date with the latest legal requirements and adjustments to ensure ongoing compliance.
-
-Risk Assessment: Identify and mitigate potential compliance risks based on established frameworks like NIST SP 800-30.
-
-## Tailored Privacy Policy Creation.
-
-Every business has unique privacy needs. We draft customized privacy policies tailored to your specific business requirements, ensuring comprehensive coverage and legal compliance.
-
-Craft User-Friendly Policies: We create comprehensive privacy policies that are written in clear, concise language, making them easy for users to understand.
-
-Ensure Legal Compliance: We integrate necessary clauses and provisions to ensure compliance with relevant laws and regulations, tailored to your organization's specific needs.
-
-Incorporate Best Practices: We recommend industry best practices for data security, transparency, and user control, ensuring your policy reflects current standards.
-
-## Expert Guidance and Continuous Learning.
-
-We provide ongoing support and expert advice to help you navigate complex privacy concepts and stay informed about emerging privacy laws and regulations.
-
-Provide Explanations: We explain complex privacy concepts in a way that is easy to grasp, regardless of your technical background.
-
-Offer Guidance and Recommendations: We offer guidance on how to improve your data privacy practices and address identified risks.
-
-Stay Up-to-Date: We continually learn about emerging privacy laws and regulations to ensure our advice and analysis are accurate and relevant.
-
-## Why Choose Us?
-
-Expertise: Our team of privacy and legal experts brings a wealth of knowledge and experience to ensure you receive top-notch service.
-
-Simplicity: We believe in making complex information simple and accessible, ensuring you stay informed and compliant without the headache.
-
-Customer Focus: Your privacy and compliance needs are our top priority. We work closely with you to provide personalized, effective solutions.
-
-### Problem Statement:
-Many people specifically consumers/users do not pay keen attention to detail especially with privacy policies-mostof whom end up regretting on the decisions they made while signing up to company websites: Read this story from Quora https://www.quora.com/Is-there-a-website-or-resource-out-there-that-summarizes-and-makes-Terms-of-Service-and-Privacy-Policies-human-readable-accessible-and-useful
-
-<img src = "./src/images/CyberPolicy-Pro-Research.JPG">
-
-We could avoid such by providing consumers and businesses with a product that effectively delivers easily consumable information that is time-consuming anduser-friendly.
-
-## Usage.
-
-This project requires ``` node.js ``` and ``` npm ``` to run.
-
-### Clone this Repository.
-```
-git clone https://github.com/MrHackeric/CyberPolicy-Pro.git
-```
-
-### Go to project directory.
-```
-cd CyberPolicy-Pro.
-```
-
-### Project setup.
-```
-npm install.
-```
-
-#### Compiles and hot-reloads for development server.
-The server runs on ``` localhost:5173 ```.
-```
-npm run dev.
-```
-
-### Go to API server directory and run the backend server.
-```
-cd src.
-```
-For server to run, create a ```.env``` file with Google's Gemini API Key and store it in the ```.env``` file under the variable name API_KEY. Get API Key here https://aistudio.google.com/app/apikey.
-
-The server listens on ```localhost:3000```.
-
-Run ```node server.js``` to deploy server.
-
-#### Compiles and minifies for production.
-```
-npm run build.
-```
-
-#### Customize configuration.
-See [Configuration Reference](https://vitejs.dev/guide/).
+1. **AI Integration**: Africare provides real-time, AI-driven guidance, ensuring midwives receive immediate support and training, significantly improving their ability to handle complications.
+2. **Comprehensive Platform**: Africare combines training, community support, mental health resources, and emergency assistance into one platform, offering a one-stop solution for maternal healthcare.
+3. **Accessibility**: Africare utilizes USSD services for areas with limited internet connectivity, ensuring broader reach and accessibility.
+4. **Community Focus**: Africare fosters a supportive community for both midwives and mothers, facilitating continuous learning and emotional support, which is crucial for improving maternal health outcomes.
