@@ -23,6 +23,7 @@
     "pdf-lib": "^1.17.1",
     "pdf-parse": "^1.1.1",
     "react": "^18.2.0",
+    "react-confetti": "^6.1.0",
     "react-datepicker": "^6.9.0",
     "react-dom": "^18.2.0",
     "react-flatpickr": "^3.10.13",
