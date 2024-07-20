@@ -12,7 +12,7 @@ import './css/style.css';
 // Import pages
 import Dashboard from './pages/Dashboard';
 import Packages from './pages/Packages';
-import DraftPolicies from './pages/DraftPolicies';
+import Midwives from './pages/Midwives';
 import SimplifiedPolicies from './pages/SimplifiedPolicies';
 
 function App() {
@@ -30,7 +30,7 @@ function App() {
       <Routes>
         <Route exact path="/" element={<Dashboard />} />
         <Route exact path="/Packages" element={<Packages />} />
-        <Route exact path="Draft Policies" element={<DraftPolicies />} />
+        <Route exact path="/MidwivesTraining" element={<Midwives />} />
         <Route exact path="Simplify Policies" element={<SimplifiedPolicies />} />
       </Routes>
     </>
