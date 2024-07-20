@@ -4,10 +4,6 @@ import Sidebar from '../partials/Sidebar';
 import Header from '../partials/Header';
 import WelcomeBanner from '../partials/dashboard/WelcomeBanner';
 
-import Simplification from '../partials/dashboard/Simplification';
-import PolicyDraft from '../partials/dashboard/PolicyDraft';
-import AIChatbot from '../partials/dashboard/AIChatbotAssistance';
-import WhyUs from '../partials/dashboard/WhyUs';
 import Chatbot from '../partials/dashboard/Chatbot';
 
 function Dashboard() {
@@ -43,10 +39,6 @@ function Dashboard() {
             <h2 className="text-4xl font-semibold text-slate-800 dark:text-slate-100 mb-2">OUR SERVICES</h2>
             {/* Cards */}
             <div className="grid grid-cols-12 gap-6">
-              <Simplification />
-              <PolicyDraft />
-              <AIChatbot />
-              <WhyUs />
               <Chatbot />
             </div>
           </div>
