@@ -5,7 +5,7 @@ function AddOns() {
   return (
     <div className="flex flex-col col-span-full sm:col-span-6 bg-white dark:bg-slate-800 shadow-lg rounded-sm border border-slate-200 dark:border-slate-700">
       <header className="px-10 py-4 border-b border-slate-100 dark:border-slate-700 flex items-center">
-      <img src="./src/images/CyberPOlicy Pro.png" height={48} width={48} />
+      <img src="./src/images/AfriCare.png" height={48} width={48} />
         <h2 className="font-semibold text-slate-800 dark:text-slate-100">Add-Ons</h2>
         <Tooltip className="ml-2" size="lg">
           <div className="text-sm">Add-Ons for both Customers and Businesses.</div>

@@ -71,7 +71,7 @@ function Sidebar({ sidebarOpen, setSidebarOpen }) {
           >
             <span className="sr-only">Close sidebar</span>
           </button>
-          <img src="./src/images/CyberPolicy Pro.png" height={108} width={108}/>
+          <img src="./src/images/AfriCare.png" height={108} width={108}/>
         </div>
 
         {/* Links */}
@@ -82,7 +82,7 @@ function Sidebar({ sidebarOpen, setSidebarOpen }) {
               <span className="hidden lg:block lg:sidebar-expanded:hidden 2xl:hidden text-center w-6" aria-hidden="true">
                 •••
               </span>
-              <span className="lg:hidden lg:sidebar-expanded:block 2xl:block">CYBERPOLICY PRO</span>
+              <span className="lg:hidden lg:sidebar-expanded:block 2xl:block">AfriCare</span>
             </h3>
             <ul className="mt-3">
 
@@ -106,7 +106,7 @@ function Sidebar({ sidebarOpen, setSidebarOpen }) {
               </li>
 
 
-              {/* SIMPLIFY POLICIES */}
+              {/* Community */}
               <li className={`px-3 py-2 rounded-sm mb-0.5 last:mb-0 ${pathname.includes('Simplify Policies') && 'bg-slate-900'}`}>
                 <NavLink
                   end
@@ -116,13 +116,13 @@ function Sidebar({ sidebarOpen, setSidebarOpen }) {
                   }`}
                 >
                   <div className="flex items-center">
-                    <span className="text-sm font-medium ml-3 lg:opacity-0 lg:sidebar-expanded:opacity-100 2xl:opacity-100 duration-200">Simplify Policies</span>
+                    <span className="text-sm font-medium ml-3 lg:opacity-0 lg:sidebar-expanded:opacity-100 2xl:opacity-100 duration-200">Community</span>
                   </div>
                 </NavLink>
               </li>
 
 
-              {/* DRAFT POLICIES */}
+              {/* Midwives Training */}
               <li className={`px-3 py-2 rounded-sm mb-0.5 last:mb-0 ${pathname.includes('Draft Policies') && 'bg-slate-900'}`}>
                 <NavLink
                   end
@@ -132,12 +132,12 @@ function Sidebar({ sidebarOpen, setSidebarOpen }) {
                   }`}
                 >
                   <div className="flex items-center">
-                    <span className="text-sm font-medium ml-3 lg:opacity-0 lg:sidebar-expanded:opacity-100 2xl:opacity-100 duration-200">Draft Policies</span>
+                    <span className="text-sm font-medium ml-3 lg:opacity-0 lg:sidebar-expanded:opacity-100 2xl:opacity-100 duration-200">Midwives Training</span>
                   </div>
                 </NavLink>
               </li>
 
-              {/* PACKAGES */}
+              {/* Maps & Emergency */}
               <li className={`px-3 py-2 rounded-sm mb-0.5 last:mb-0 ${pathname.includes('packages') && 'bg-slate-900'}`}>
                 <NavLink
                   end
@@ -148,7 +148,7 @@ function Sidebar({ sidebarOpen, setSidebarOpen }) {
                 >
                   <div className="flex items-center">
                     <span className="text-sm font-medium ml-3 lg:opacity-0 lg:sidebar-expanded:opacity-100 2xl:opacity-100 duration-200">
-                      Upgrade your Package
+                      Maps & Emergency
                     </span>
                   </div>
                 </NavLink>

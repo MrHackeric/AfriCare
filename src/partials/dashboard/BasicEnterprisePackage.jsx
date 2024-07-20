@@ -5,7 +5,7 @@ function BasicEnterprisePackage() {
     <div className="flex flex-col col-span-full sm:col-span-6 bg-white dark:bg-slate-800 shadow-lg rounded-sm border border-slate-200 dark:border-slate-700">
         <div className="px-5 pt-5">
             <header className="px-5 py-4 border-b border-slate-100 dark:border-slate-700 flex items-center">
-                <img src="./src/images/CyberPOlicy Pro.png" height={48} width={48} />
+                <img src="./src/images/AfriCare.png" height={48} width={48} />
             </header>
             <h2 className="text-lg font-semibold text-slate-800 dark:text-slate-100 mb-2">Basic Enterprise Package</h2>
             <div className="text-xs font-semibold text-slate-400 dark:text-slate-500 uppercase mb-1">Freemium account</div>

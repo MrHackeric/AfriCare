@@ -47,8 +47,8 @@ function WelcomeBanner() {
 
       {/* Content */}
       <div className="relative">
-        <h1 className="text-2xl md:text-3xl text-slate-800 dark:text-slate-100 font-bold mb-1">Welcome to CyberPolicy Pro</h1>
-        <p className="dark:text-indigo-200">At CyberPolicy Pro, we specialize in simplifying privacy policies, ensuring compliance with legal frameworks, and drafting tailored privacy policies for businesses and enterprises. Our services also include an AI chatbot for real-time assistance, designed to make complex cybersecurity and privacy information easily accessible and understandable.
+        <h1 className="text-2xl md:text-3xl text-slate-800 dark:text-slate-100 font-bold mb-1">Welcome to AfriCare</h1>
+        <p className="dark:text-indigo-200">Africare is dedicated to transforming maternal healthcare across Africa. Our innovative platform addresses the critical challenges faced by expectant mothers, midwives, and healthcare providers by leveraging cutting-edge technology and fostering a supportive community.
         </p>
       </div>
     </div>
