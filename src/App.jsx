@@ -13,7 +13,7 @@ import './css/style.css';
 import Dashboard from './pages/Dashboard';
 import Packages from './pages/Packages';
 import Midwives from './pages/Midwives';
-import SimplifiedPolicies from './pages/SimplifiedPolicies';
+import LiveChartArea from './pages/LiveChartArea';
 
 function App() {
 
@@ -31,7 +31,7 @@ function App() {
         <Route exact path="/" element={<Dashboard />} />
         <Route exact path="/Packages" element={<Packages />} />
         <Route exact path="/MidwivesTraining" element={<Midwives />} />
-        <Route exact path="Simplify Policies" element={<SimplifiedPolicies />} />
+        <Route exact path="/chatArea" element={<LiveChartArea />} />
       </Routes>
     </>
   );
