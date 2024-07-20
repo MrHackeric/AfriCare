@@ -3,32 +3,32 @@ import React from 'react';
 function AdvancedMidwivesTrainingModule() {
   return (
     <div className="flex flex-col col-span-full sm:col-span-6 bg-white dark:bg-slate-800 shadow-lg rounded-sm border border-slate-200 dark:border-slate-700 p-5">
-      <h2 className="text-lg font-semibold text-slate-800 dark:text-slate-100 mb-2">Advanced Midwives Training Module</h2>
+      <h2 className="text-sm font-semibold text-slate-800 dark:text-slate-100 mb-2">Advanced Midwives Training Module</h2>
       
       {/* Detailed Notes */}
       <div className="mb-6">
-        <h3 className="text-md font-semibold text-slate-800 dark:text-slate-100 mb-2">Detailed Notes</h3>
-        <p className="text-slate-800 dark:text-slate-100 mb-4">
+        <h3 className="text-xs font-semibold text-slate-800 dark:text-slate-100 mb-2">Detailed Notes</h3>
+        <p className="text-xs text-slate-800 dark:text-slate-100 mb-4">
           This module provides comprehensive information on advanced maternal care, focusing on both medical and emotional aspects of midwifery. The topics covered include high-risk pregnancies, emergency interventions, advanced neonatal care, and mental health support for new mothers.
         </p>
-        <p className="text-slate-800 dark:text-slate-100 mb-4">
+        <p className="text-xs text-slate-800 dark:text-slate-100 mb-4">
           <strong>High-Risk Pregnancies:</strong> Understanding the factors that contribute to high-risk pregnancies, such as maternal age, pre-existing medical conditions, and multiple pregnancies. This section also covers management strategies and monitoring techniques to ensure the safety of both mother and baby.
         </p>
-        <p className="text-slate-800 dark:text-slate-100 mb-4">
+        <p className="text-xs text-slate-800 dark:text-slate-100 mb-4">
           <strong>Emergency Interventions:</strong> Detailed protocols for handling emergencies during labor and delivery, including hemorrhage control, managing pre-eclampsia, and neonatal resuscitation techniques.
         </p>
-        <p className="text-slate-800 dark:text-slate-100 mb-4">
+        <p className="text-xs text-slate-800 dark:text-slate-100 mb-4">
           <strong>Advanced Neonatal Care:</strong> Providing care for preterm and low birth weight infants, understanding the importance of kangaroo care, and managing common neonatal complications such as jaundice and respiratory distress syndrome.
         </p>
-        <p className="text-slate-800 dark:text-slate-100 mb-4">
+        <p className="text-xs text-slate-800 dark:text-slate-100 mb-4">
           <strong>Mental Health Support:</strong> Identifying signs of postpartum depression and anxiety, offering appropriate referrals, and providing emotional support to new mothers. This section emphasizes the importance of holistic care that includes mental well-being.
         </p>
       </div>
 
       {/* Revision Materials */}
       <div className="mb-6">
-        <h3 className="text-md font-semibold text-slate-800 dark:text-slate-100 mb-2">Revision Materials</h3>
-        <ul className="list-disc list-inside text-slate-800 dark:text-slate-100 mb-4">
+        <h3 className="text-xs font-semibold text-slate-800 dark:text-slate-100 mb-2">Revision Materials</h3>
+        <ul className="list-disc list-inside text-xs text-slate-800 dark:text-slate-100 mb-4">
           <li>Summary sheets for each topic covered in the detailed notes.</li>
           <li>Key points and checklists for quick review before exams or practical assessments.</li>
           <li>Sample case studies with questions and answers for practice.</li>
@@ -37,8 +37,8 @@ function AdvancedMidwivesTrainingModule() {
 
       {/* Resources */}
       <div className="mb-6">
-        <h3 className="text-md font-semibold text-slate-800 dark:text-slate-100 mb-2">Resources</h3>
-        <ul className="list-disc list-inside text-slate-800 dark:text-slate-100 mb-4">
+        <h3 className="text-xs font-semibold text-slate-800 dark:text-slate-100 mb-2">Resources</h3>
+        <ul className="list-disc list-inside text-xs text-slate-800 dark:text-slate-100 mb-4">
           <li>
             <a href="https://www.who.int/maternal_health" className="text-blue-500 dark:text-blue-400" target="_blank" rel="noopener noreferrer">World Health Organization: Maternal Health</a>
           </li>
@@ -56,11 +56,11 @@ function AdvancedMidwivesTrainingModule() {
 
       {/* Recommendations */}
       <div className="mb-6">
-        <h3 className="text-md font-semibold text-slate-800 dark:text-slate-100 mb-2">Recommendations</h3>
-        <p className="text-slate-800 dark:text-slate-100 mb-4">
+        <h3 className="text-xs font-semibold text-slate-800 dark:text-slate-100 mb-2">Recommendations</h3>
+        <p className="text-xs text-slate-800 dark:text-slate-100 mb-4">
           To ensure the best outcomes for mothers and infants, it is recommended that midwives:
         </p>
-        <ul className="list-disc list-inside text-slate-800 dark:text-slate-100 mb-4">
+        <ul className="list-disc list-inside text-xs text-slate-800 dark:text-slate-100 mb-4">
           <li>Stay updated with the latest guidelines and research in maternal and neonatal care.</li>
           <li>Engage in continuous professional development and training programs.</li>
           <li>Build strong communication and support networks with other healthcare professionals.</li>

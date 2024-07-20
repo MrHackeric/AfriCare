@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import Sidebar from '../partials/Sidebar';
 import Header from '../partials/Header';
 import Chatbot from "../partials/dashboard/Chatbot";
@@ -18,9 +18,33 @@ import AdvancedMidwivesTrainingModule from "../partials/dashboard/MidwivesResour
 function Midwives() {
   const [sidebarOpen, setSidebarOpen] = useState(false);
   const [currentModule, setCurrentModule] = useState(1);
+  const [completedModules, setCompletedModules] = useState(0); // Track completed modules
+
+  // Refs for container dimensions
+  const containerRef = useRef(null);
+  const [containerWidth, setContainerWidth] = useState(window.innerWidth);
+  const [containerHeight, setContainerHeight] = useState(window.innerHeight);
+
+  useEffect(() => {
+    // Update container dimensions on window resize
+    const handleResize = () => {
+      if (containerRef.current) {
+        setContainerWidth(containerRef.current.offsetWidth);
+        setContainerHeight(containerRef.current.offsetHeight);
+      }
+    };
+
+    window.addEventListener('resize', handleResize);
+    handleResize(); // Initial call
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
 
   const handleNext = () => {
-    if (currentModule < 9) { // Change to 9 for the total number of modules
+    if (currentModule < 10) { // Change to 10 for the total number of modules
+      setCompletedModules(completedModules + 1); // Increment completed modules
       setCurrentModule(currentModule + 1);
     }
   };
@@ -57,7 +81,7 @@ function Midwives() {
   };
 
   // Calculate progress percentage
-  const progress = ((currentModule - 1) / 8) * 100; // Adjust calculation to 8
+  const progress = ((currentModule - 1) / 9) * 100; // Adjust calculation to 9
 
   return (
     <div className="flex h-screen overflow-hidden">
@@ -74,7 +98,7 @@ function Midwives() {
         </div>
 
         <main className="relative flex-1 pt-2">
-          <div className="px-4 sm:px-6 lg:px-8 py-8 w-full h-full">
+          <div className="px-4 sm:px-6 lg:px-8 py-8 w-full h-full" ref={containerRef}>
             {/* Top Buttons */}
             <div className="mb-4 flex justify-between">
               <button
@@ -87,7 +111,7 @@ function Midwives() {
               <button
                 className="bg-blue-500 text-white py-2 px-4 rounded"
                 onClick={handleNext}
-                disabled={currentModule === 9} // Update to 9 for the last module
+                disabled={currentModule === 10} // Update to 10 for the last module
               >
                 Next
               </button>
@@ -108,9 +132,9 @@ function Midwives() {
                 {renderModule()}
 
                 {/* Congratulations Message */}
-                {currentModule === 9 && (
+                {completedModules === 9 && (
                   <div className="absolute inset-0 flex items-center justify-center flex-col text-center bg-white dark:bg-slate-800 z-10">
-                    <Confetti />
+                    <Confetti width={containerWidth} height={containerHeight} />
                     <div className="bg-white dark:bg-slate-800 p-6 rounded-lg shadow-lg z-20">
                       <h1 className="text-2xl font-bold text-green-500 mb-4">Congratulations!</h1>
                       <p className="text-lg text-slate-800 dark:text-slate-100">
@@ -135,7 +159,7 @@ function Midwives() {
               <button
                 className="bg-blue-500 text-white py-2 px-4 rounded"
                 onClick={handleNext}
-                disabled={currentModule === 9} // Update to 9 for the last module
+                disabled={currentModule === 10} // Update to 10 for the last module
               >
                 Next
               </button>

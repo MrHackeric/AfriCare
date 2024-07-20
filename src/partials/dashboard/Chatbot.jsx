@@ -58,7 +58,7 @@ function Chatbot() {
             <div className="pt-4 flex space-x-2">
               <input
                 type="text"
-                placeholder="Interact with CyberPolicy Pro for any enquiries..."
+                placeholder="Interact with AfriCare Chatbot for assistance..."
                 className="p-2 border rounded-sm flex-grow dark:bg-slate-800 dark:border-slate-700"
                 value={url}
                 onChange={(e) => setUrl(e.target.value)}
