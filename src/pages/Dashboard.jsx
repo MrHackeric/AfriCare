@@ -3,8 +3,9 @@ import React, { useState } from 'react';
 import Sidebar from '../partials/Sidebar';
 import Header from '../partials/Header';
 import WelcomeBanner from '../partials/dashboard/WelcomeBanner';
-
 import Chatbot from '../partials/dashboard/Chatbot';
+import DashboardHome from '../partials/dashboard/DashboardHome';
+import BenefitsModule from '../partials/dashboard/BenefitsModule';
 
 function Dashboard() {
 
@@ -36,10 +37,11 @@ function Dashboard() {
               </div>
 
             </div>
-            <h2 className="text-4xl font-semibold text-slate-800 dark:text-slate-100 mb-2">OUR SERVICES</h2>
             {/* Cards */}
             <div className="grid grid-cols-12 gap-6">
               <Chatbot />
+              <DashboardHome />
+              <BenefitsModule />
             </div>
           </div>
         </main>
