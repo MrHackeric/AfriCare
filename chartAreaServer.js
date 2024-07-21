@@ -2,6 +2,7 @@ import express from "express";
 import { Server } from "socket.io";
 import http from "http";
 import readline from "readline";
+import cors from "cors"; // Import cors
 
 const app = express();
 const server = http.createServer(app);
@@ -12,7 +13,10 @@ const io = new Server(server, {
   },
 });
 
+app.use(cors()); // Use cors middleware
 app.use(express.json());
+
+let pendingMessage = null;
 
 // Handle chat messages via POST request
 app.post("/chat", (req, res) => {
@@ -38,7 +42,15 @@ app.post("/chat", (req, res) => {
     timestamp: new Date(),
   });
 
-  res.status(200).json({ message: "Message received, waiting for response" });
+  // Indicate typing status
+  io.emit("typing_status", "Typing...");
+
+  pendingMessage = {
+    text: text,
+    id: Date.now(), // Generate a unique ID for the message
+  };
+
+  res.status(200).json({ message: "Typing..." });
 });
 
 // Setup console input to respond to messages
@@ -47,20 +59,20 @@ const rl = readline.createInterface({
   output: process.stdout,
 });
 
-let pendingMessage = null;
-
 rl.on("line", (input) => {
   if (pendingMessage) {
-    console.log(`Responding to: ${pendingMessage.content}`);
+    console.log(`Responding to: ${pendingMessage.text}`);
     io.emit("receive_message", {
       user: "Operator", // The operator's name
       content: input,
       timestamp: new Date(),
+      replyTo: pendingMessage.id,
     });
     console.log("Message sent by operator:", {
       user: "Operator",
       content: input,
       timestamp: new Date(),
+      replyTo: pendingMessage.id,
     });
     pendingMessage = null;
   } else {
