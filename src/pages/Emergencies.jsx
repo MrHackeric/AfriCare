@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Sidebar from "../partials/Sidebar";
 import Header from "../partials/Header";
 import MedicCard from "../partials/dashboard/MedCard";
+import Chatbot from "../partials/dashboard/Chatbot";
 
 function Emergencies() {
   const [sidebarOpen, setSidebarOpen] = useState(false);
@@ -62,6 +63,7 @@ function Emergencies() {
           </div>
         </main>
       </div>
+      <Chatbot className="col-span-full sm:col-span-12" />
     </div>
   );
 }

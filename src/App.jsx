@@ -12,8 +12,8 @@ import './css/style.css';
 // Import pages
 import Dashboard from './pages/Dashboard';
 import Midwives from './pages/Midwives';
-import LiveChartArea from './pages/LiveChartArea';
 import Emergencies from './pages/Emergencies';
+import LiveChartArea from './pages/LiveChartArea';
 
 function App() {
 
@@ -30,8 +30,8 @@ function App() {
       <Routes>
         <Route exact path="/" element={<Dashboard />} />
         <Route exact path="/MidwivesTraining" element={<Midwives />} />
-        <Route exact path="/chatArea" element={<LiveChartArea />} />
         <Route exact path="/Emergencies" element={<Emergencies />} />
+        <Route exact path="/ChartArea" element={<LiveChartArea />} />      
       </Routes>
     </>
   );
