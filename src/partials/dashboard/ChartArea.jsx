@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { io } from 'socket.io-client';
+import { FaPaperPlane } from 'react-icons/fa'; // Import the send icon
 
 const socket = io('http://localhost:3000'); // Adjust the server URL as needed
 
@@ -60,22 +61,22 @@ function ChatArea() {
           ))}
           <div ref={chatEndRef} /> {/* This div is used to scroll to the bottom */}
         </div>
-        <form onSubmit={handleSendMessage} className="flex items-center mt-2">
-          <input
-            type="text"
-            placeholder="Type your message..."
-            className="p-2 border rounded-sm flex-1 dark:bg-slate-800 dark:border-slate-700 text-xs"
-            value={message}
-            onChange={handleInputChange}
-          />
-          <button
-            type="submit"
-            className="bg-blue-500 text-white p-2 rounded-sm ml-2 text-xs"
-          >
-            Send
-          </button>
-        </form>
       </div>
+      <form onSubmit={handleSendMessage} className="flex items-center mt-2">
+        <input
+          type="text"
+          placeholder="Type your message..."
+          className="text-xs p-2 border rounded-sm flex-1 dark:bg-slate-800 dark:border-slate-700"
+          value={message}
+          onChange={handleInputChange}
+        />
+        <button
+          type="submit"
+          className="text-xs bg-blue-500 text-white p-2 rounded-sm ml-2 flex items-center justify-center"
+        >
+          <FaPaperPlane className="text-lg" />
+        </button>
+      </form>
     </div>
   );
 }
