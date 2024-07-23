@@ -1,10 +1,10 @@
-# Africare - Enhancing Maternal Healthcare in Africa
+# 🌍 Africare - Enhancing Maternal Healthcare in Africa
 
-## Introduction
+## 📝 Introduction
 
 Africare is a comprehensive platform designed to address the critical challenges faced in maternal healthcare across Africa. By leveraging AI-driven guidance, community support networks, and accessible resources, Africare aims to improve the quality of care for expectant mothers, midwives, and healthcare providers.
 
-## Problem Statement
+## ❗ Problem Statement
 
 Maternal healthcare in Africa faces significant challenges:
 
@@ -13,7 +13,7 @@ Maternal healthcare in Africa faces significant challenges:
 3. **Mental Health Issues**: Prenatal and postnatal depression are prevalent among women, with insufficient mental health support.
 4. **Fragmented Healthcare Services**: Difficulty in accessing comprehensive and coordinated healthcare services.
 
-## Proposed Solution
+## 💡 Proposed Solution
 
 Africare aims to provide a holistic solution to these challenges by:
 
@@ -23,14 +23,14 @@ Africare aims to provide a holistic solution to these challenges by:
 4. **Emergency Assistance Integration**: Using geolocation services to direct users to nearby medical facilities and pharmacies.
 5. **Resource Sharing Platform**: Enabling users to share personal experiences and foster a supportive community.
 
-## Project Structure
+## 📂 Project Structure
 
 The Africare project is structured as follows:
-```src/```Contains the backend and frontend source code for the application. Here our Gemini AI's ```server.js``` and ```App.jsx``` is located.
-```src/pages``` Contains the main dashboard page of the application.
-```src/partials``` Contains the dashboard components such as Header and Sidebar.
+`src/` Contains the backend and frontend source code for the application. Here our Gemini AI's `server.js` and `App.jsx` is located.
+`src/pages` Contains the main dashboard page of the application.
+`src/partials` Contains the dashboard components such as Header and Sidebar.
 
-## How Africare Solves the Problem
+## 🚀 How Africare Solves the Problem
 
 1. **AI Integration**: Africare provides real-time, AI-driven guidance, ensuring midwives receive immediate support and training, significantly improving their ability to handle complications.
 2. **Comprehensive Platform**: Africare combines training, community support, mental health resources, and emergency assistance into one platform, offering a one-stop solution for maternal healthcare.
